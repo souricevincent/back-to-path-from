@@ -32,6 +32,7 @@ const pathFrom = function (pathTo, fromTheLevel) {
     } else {
         console.log('a misstatement with pathFrom');
     }
+    return;
 
 };
 
