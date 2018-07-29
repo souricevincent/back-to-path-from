@@ -3,32 +3,32 @@ const path = require('path');
 const pathFrom = function (pathTo, fromTheLevel) {
     let pathNormalized = path.normalize(pathTo);
 
-    //afficher les nb dernier element du array
-    var arrayDirname = pathNormalized.split(path.sep);
+    let arrayPath = pathNormalized.split(path.sep);
 
     // prototype for delete empty entry in array
     Array.prototype.unset = function (val) {
-        var index = this.indexOf(val);
+        let index = this.indexOf(val);
         if (index > -1) {
             this.splice(index, 1)
         }
     };
 
-    // Delete empty entry
-    arrayDirname.unset('');
+    // delete empty entry
+    arrayPath.unset('');
 
-    const arrayDirnameLength = arrayDirname.length;
+    const arrayPathLength = arrayPath.length;
 
-    if ( fromTheLevel > 0 && fromTheLevel <= arrayDirnameLength) {
+    if ( fromTheLevel > 0 && fromTheLevel <= arrayPathLength) {
 
         // traitement
-        // New Path array
-        let newPath = "";
-        let i = arrayDirnameLength - fromTheLevel;
-        while (i < arrayDirnameLength) {
-            newPath = newPath + "/" + arrayDirname[i];
+        // new Path array
+        let resultPath = "";
+        let i = arrayPathLength - fromTheLevel;
+        while (i < arrayPathLength) {
+            resultPath = resultPath + "/" + arrayPath[i];
             i++;
         }
+        return resultPath;
     } else {
         console.log('a misstatement with pathFrom');
     }
@@ -36,6 +36,6 @@ const pathFrom = function (pathTo, fromTheLevel) {
 };
 
 module.exports = {
-    pathFrom,
+    pathFrom
 };
 
