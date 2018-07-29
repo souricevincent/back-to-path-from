@@ -1,18 +1,18 @@
-#back-to-path-from (nodejs)
+# back-to-path-from (nodejs)
 
 back-to-path-from allows you to start a path from an earlier starting point.
 part of the end to go up.
 
-##Install
+## Install
 
 `npm install back-to-path-from`
 
-##running
+## running
 in your project include the library
 
 `const backTo = require('back-to-path-from');`
 
-##example
+## example
 ```
 let result = backTo.pathFrom('/User/themes/custom', 2);
 console.log(result);
