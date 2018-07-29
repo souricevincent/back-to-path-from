@@ -1,6 +1,6 @@
 const path = require('path');
 
-const pathToFrom = function (pathTo, fromTheLevel) {
+const pathFrom = function (pathTo, fromTheLevel) {
     let pathNormalized = path.normalize(pathTo);
 
     //afficher les nb dernier element du array
@@ -36,6 +36,6 @@ const pathToFrom = function (pathTo, fromTheLevel) {
 };
 
 module.exports = {
-    pathToFrom,
+    pathFrom,
 };
 
