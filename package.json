@@ -1,0 +1,29 @@
+{
+  "name": "back-to-path-from",
+  "version": "1.0.0",
+  "description": "Start the path from x directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souricevincent/back-to-path-from.git"
+  },
+  "keywords": [
+    "path",
+    "from",
+    "back",
+    "down",
+    "to"
+  ],
+  "author": "sourice vincent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/souricevincent/back-to-path-from/issues"
+  },
+  "homepage": "https://github.com/souricevincent/back-to-path-from#readme",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
